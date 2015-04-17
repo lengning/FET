@@ -24,11 +24,14 @@ Neither=length(FAll)-Both-MkNoIden-IdenNoMk
 
 
 ToTest=cbind(c(Both, MkNoIden), c(IdenNoMk, Neither))
-
+cat("\n ==================================== \n")
 print(cbind(c("In_Both", "InMarkerList_Not_Identified"), 
 						c("Identified_Not_InMarkerList", "In_Neither")))
+
+cat("\n ==================================== \n")
 print(ToTest)
 
+cat("\n ==================================== \n")
 Fet=fisher.test(ToTest)
 
 print(Fet)
