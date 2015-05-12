@@ -13,3 +13,5 @@ The inputs for the code are:
 - [FileNameOut] Output file name. The output file contains two numbers - fisher's exact test p value and log p value.
 
 The contigency table, test statatistics and confidence intervals will be shown in console.
+
+Note genes in file2 or 3 but not in file 1 will be excluded prior to analysis.
