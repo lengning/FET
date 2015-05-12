@@ -13,9 +13,11 @@ Out=options[4] # output file name
 
 
 FAll=read.table(FileAll,header=F,stringsAsFactors=F)[[1]]
-FMk=read.table(GeneList,header=F,stringsAsFactors=F)[[1]]
-FIden=read.table(IdenList,header=F,stringsAsFactors=F)[[1]]
+FMkIn=read.table(GeneList,header=F,stringsAsFactors=F)[[1]]
+FIdenIn=read.table(IdenList,header=F,stringsAsFactors=F)[[1]]
 
+FMk=intersect(FAll,FMkIn)
+FIden=intersect(FAll, FIdenIn)
 
 Both=length(intersect(FMk, FIden))
 MkNoIden=length(setdiff(FMk, FIden))
