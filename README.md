@@ -1,6 +1,8 @@
 # FET
 Fisher's exact test wrapper
-Codes to perform fisher's exact test. Example to run the code (from command line):
+Codes to perform one-tailed fisher's exact test. The alternative hypothesis is OR>1. 
+In which OR = (In_Both * In_Neither)/(In_markerlist_only * Identified_only).
+Example to run the code (from command line):
 
 Rscript FET.R Allgenes.txt geneList.txt geneIdentified.txt FET_out.txt
 
