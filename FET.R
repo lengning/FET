@@ -34,7 +34,7 @@ cat("\n ==================================== \n")
 print(ToTest)
 
 cat("\n ==================================== \n")
-Fet=fisher.test(ToTest)
+Fet=fisher.test(ToTest, alternative="g")
 
 print(Fet)
 Res=c(Fet$p.value, log(Fet$p.value))
